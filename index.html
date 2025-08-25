@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrGlad Official Server</title>
+    <link rel="stylesheet" href="./CSS/style.css" type="text/css">
+    <script src="./JavaScript/script.js"> </script>
+</head>
+<body>
+
+    <!-- Header e Menu di Navigazione -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="./IMGS/icon.jpg" alt="Server Logo">
+                MrGlad Official Server
+            </a>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="#rules" class="nav-link">Regole</a>
+                <a href="#events" class="nav-link">Eventi</a>
+                <a href="#og" class="nav-link">OG</a>
+                <a href="https://discord.gg/your-invite-link" class="nav-link join-link" target="_blank">Unisciti</a>
+                <a href="#qa" class="nav-link">Domande</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sezione Home -->
+    <section id="home" class="section">
+        <div class="home-content container">
+            <h1>Benvenuti nel MrGlad Official Server</h1>
+            <p>Volevamo creare un impero comunista e fascista (sì, insieme, non chiedere come), ma nel 2025 ci hanno detto “magari evitate”. Così, tra un meme e l’altro, abbiamo conosciuto gente assurda e simpatica. È nato un server. È degenerato. Niente impero, ma forse uno schiavo lo trovi. Benvenuti.</p>
+            <a href="https://discord.gg/your-invite-link" class="join-button" target="_blank">Unisciti al Server</a>
+        </div>
+    </section>
+
+    <!-- Sezione Info -->
+    <section id="info" class="section">
+        <div class="container">
+            <h2 class="section-title">Informazioni sul Server</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>La Nostra Storia</h3>
+                    <p>Nato da un'idea folle, il nostro server è diventato un punto di ritrovo per gente stravagante e simpatica. Non siamo riusciti a costruire un impero, ma abbiamo creato una community unica.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Chi Siamo</h3>
+                    <p>Siamo una community affiatata e caotica, unita dalla passione per il divertimento, i meme e le discussioni più assurde. Se cerchi un posto dove essere te stesso, sei nel posto giusto.</p>
+                </div>
+                <div class="info-card">
+                    <h3>La Degenerazione</h3>
+                    <p>Il server è degenerato, ma nel senso buono. Ogni giorno è una nuova avventura, tra battute, sfide, e momenti che ti faranno chiedere "ma che sto a fa' qui?".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sezione Regole -->
+    <section id="rules" class="section">
+        <div class="container">
+            <h2 class="section-title">Regole del Server</h2>
+            <div class="rules-image-container">
+                <img src="./IMGS/rules.png" alt="Regole del Server" class="rules-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Eventi (Calendario) -->
+    <section id="events" class="section">
+        <div class="container">
+            <h2 class="section-title">Calendario Eventi</h2>
+            <div class="event-card">
+                <h3>Evento 1: Serata Meme</h3>
+                <p>Data: 28 Agosto 2025</p>
+                <p>Preparate i vostri meme migliori per una serata di risate sfrenate. Il vincitore riceverà un premio speciale!</p>
+            </div>
+            <div class="event-card">
+                <h3>Evento 2: Torneo di Gaming</h3>
+                <p>Data: 5 Settembre 2025</p>
+                <p>Un torneo per i nostri gamers più agguerriti. Scegli il tuo gioco preferito e iscriviti per vincere il titolo di campione.</p>
+            </div>
+            <div class="event-card">
+                <h3>Evento 3: Chill Night</h3>
+                <p>Data: 12 Settembre 2025</p>
+                <p>Una serata tranquilla per chiacchierare e ascoltare musica in compagnia. L'atmosfera perfetta per rilassarsi dopo una lunga giornata.</p>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">Controlla regolarmente per i prossimi eventi!</p>
+        </div>
+    </section>
+
+    <!-- Sezione OG -->
+    <section id="og" class="section">
+        <div class="container">
+            <h2 class="section-title">Gli OG del Server</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto;">Gli OG, ovvero quelli che c'erano già da prima del server e chi sa la sua storia. Sono le fondamenta della nostra community.</p>
+            <img src="./IMGS/ogs.png" alt="Gli OG" class="og-image">
+        </div>
+    </section>
+
+    <!-- Sezione Domande (Form) -->
+    <section id="qa" class="section">
+        <div class="container">
+            <h2 class="section-title">Hai una Domanda?</h2>
+            <div class="qa-form">
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Oggetto:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Invia Domanda</button>
+                </form>
+                <div id="form-status" style="margin-top: 1rem; text-align: center; display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 MrGlad Official Server. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
